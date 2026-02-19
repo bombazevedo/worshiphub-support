@@ -1,41 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Central de Suporte - WorshipHub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      margin: 0;
-      padding: 40px;
-      text-align: center;
-    }
-    h1 {
-      color: #1a1a1a;
-    }
-    a {
-      display: block;
-      margin: 15px 0;
-      color: #0056ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WorshipHub — Suporte e documentos oficiais (Privacidade, Termos e Exclusão de Conta).">
+  <title>WorshipHub • Suporte</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="./index.html" aria-label="WorshipHub Suporte">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div class="brand-title">WorshipHub</div>
+          <div class="brand-sub">Central de Suporte & Documentos</div>
+        </div>
+      </a>
 
-  <h1>Central de Suporte WorshipHub</h1>
+      <nav class="nav" aria-label="Navegação">
+        <a href="./privacy.html">Privacidade</a>
+        <a href="./terms.html">Termos</a>
+        <a href="./account-deletion.html">Excluir conta</a>
+      </nav>
+    </div>
+  </div>
 
-  <p>Bem-vindo à nossa central de suporte.</p>
+  <main class="container">
+    <section class="hero">
+      <span class="kicker">Suporte oficial • WorshipHub</span>
+      <h1 class="h1">Tudo o que você precisa para usar o WorshipHub com segurança.</h1>
+      <p class="lead">
+        Aqui você encontra nossos documentos oficiais, contatos e orientações essenciais.
+        Se precisar de ajuda, fale com a equipe — respondemos o mais rápido possível.
+      </p>
 
-  <a href="privacy.html">Política de Privacidade</a>
-  <a href="terms.html">Termos de Uso</a>
-  <a href="contact.html">Contato</a>
+      <div class="btnrow">
+        <a class="btn primary" href="mailto:worshiphubsuporte@gmail.com?subject=WorshipHub%20-%20Suporte">Enviar e-mail</a>
+        <a class="btn" href="https://wa.me/5524999874551?text=Ol%C3%A1!%20Preciso%20de%20ajuda%20com%20o%20WorshipHub.">WhatsApp</a>
+        <a class="btn" href="./privacy.html">Ler privacidade</a>
+        <a class="btn" href="./terms.html">Ler termos</a>
+      </div>
+    </section>
 
+    <section class="grid">
+      <article class="card">
+        <h2>Atalhos rápidos</h2>
+        <p>Links diretos para as páginas exigidas por lojas (Google Play / Apple) e para solicitações de privacidade.</p>
+
+        <div class="hr"></div>
+
+        <div class="btnrow">
+          <a class="btn" href="./privacy.html">Política de Privacidade</a>
+          <a class="btn" href="./terms.html">Termos de Uso</a>
+          <a class="btn" href="./account-deletion.html">Exclusão de conta e dados</a>
+        </div>
+
+        <div class="hr"></div>
+
+        <span class="badge">Contato oficial: worshiphubsuporte@gmail.com • +55 24 99987-4551</span>
+      </article>
+
+      <aside class="card">
+        <h2>Status e boas práticas</h2>
+        <ul>
+          <li>Use sempre o e-mail cadastrado ao solicitar suporte.</li>
+          <li>Pedidos de privacidade e exclusão podem exigir validação de identidade.</li>
+          <li>Para sua segurança, nunca compartilhe sua senha.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div class="small-links">
+        © <span id="year">2026</span> WorshipHub •
+        <a href="https://worshiphub-recover.org">Site oficial</a> •
+        <a href="./privacy.html">Privacidade</a> •
+        <a href="./terms.html">Termos</a> •
+        <a href="./account-deletion.html">Excluir conta</a>
+      </div>
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
+    </footer>
+  </main>
 </body>
 </html>
