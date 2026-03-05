@@ -128,7 +128,58 @@
         A exclusão pode ser feita pelo app (Configurações → Excluir conta) ou solicitada via suporte.
         Consulte: <a href="./account-deletion.html">Exclusão de conta e dados</a>.
       </p>
+      
+      <h3>10.1) Permissões do dispositivo (Android/iOS)</h3>
+<p>
+  O WorshipHub pode solicitar permissões do dispositivo apenas quando necessárias para funcionalidades específicas
+  e sempre mediante ação do usuário. Você pode negar ou revogar permissões a qualquer momento nas configurações do sistema.
+</p>
 
+<h3>10.1.1 Câmera (android.permission.CAMERA)</h3>
+<ul>
+  <li>Usada exclusivamente para capturar imagens quando você escolhe enviar foto de perfil ou anexos em eventos.</li>
+  <li>A câmera não é utilizada em segundo plano.</li>
+  <li>Nenhuma imagem é capturada sem interação explícita do usuário.</li>
+</ul>
+
+<h3>10.1.2 Arquivos e mídia</h3>
+<ul>
+  <li>Usado para selecionar e enviar arquivos/anexos (ex.: imagens e documentos) escolhidos pelo usuário.</li>
+  <li>O app acessa apenas o arquivo selecionado no momento do envio.</li>
+</ul>
+
+<h3>10.1.3 Notificações</h3>
+<ul>
+  <li>Usadas para alertas importantes da plataforma (ex.: eventos, mudanças, avisos relevantes).</li>
+  <li>Se você desativar notificações, o app continua funcionando, mas pode perder alertas em tempo real.</li>
+</ul>
+
+<h3>10.1.4 Calendário (quando ativado pelo usuário)</h3>
+<ul>
+  <li>Se você optar por integrar, o app pode solicitar acesso ao calendário para ajudar no registro/organização de eventos.</li>
+  <li>Essa função é opcional e depende de consentimento.</li>
+</ul>
+
+<h2>10.2) Como gerenciar permissões</h2>
+<p>
+  Você pode alterar permissões em: <strong>Configurações do dispositivo</strong> → <strong>Apps</strong> → <strong>WorshipHub</strong> → <strong>Permissões</strong>.
+  Ao revogar permissões, algumas funções (ex.: anexos via câmera) podem ficar indisponíveis.
+</p>
+
+<h2>10.3) Operadores e serviços de terceiros</h2>
+<p>
+  Para operar o WorshipHub, utilizamos provedores (operadores) que tratam dados sob nossas instruções e com obrigações
+  contratuais de segurança e confidencialidade. Entre eles:
+</p>
+<ul>
+  <li><strong>Google Firebase</strong>: autenticação, banco de dados/armazenamento operacional e/ou mensageria (conforme recursos habilitados no app).</li>
+  <li><strong>Cloudinary</strong>: armazenamento e entrega de mídia (ex.: imagens/anexos) enviada pelo usuário.</li>
+  <li><strong>Infraestrutura/hosting</strong>: provedores de hospedagem e rede para manter a API e a disponibilidade do serviço.</li>
+</ul>
+<p>
+  Esses provedores tratam dados apenas para viabilizar as funcionalidades e sob medidas de segurança apropriadas.
+</p>
+      
       <h2>11) Alterações nesta política</h2>
       <p>
         Podemos atualizar esta política periodicamente. A versão vigente estará sempre publicada nesta página.
